@@ -250,7 +250,7 @@
 		embedding = list(embed_chance = 200, max_damage_mult = 15, armour_block = 40) //rule of cool
 		throwforce = 35
 		sharpness = IS_SHARP
-		playsound(user, 'sound/weapons/saberon.ogg', 5, 1)
+		playsound(user, 'sound/weapons/saberon.ogg', 1, 1,ignore_walls = FALSE, extrarange = -9)
 		to_chat(user, "<span class='warning'>[src] is now active.</span>")
 	updateEmbedding()
 	var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
